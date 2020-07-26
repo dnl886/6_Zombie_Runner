@@ -119,7 +119,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 94d8d149e1dba4249b4126bf4f7cd6b8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 9898c140d8e6b634bb60b33dc59623e7, type: 2}
 --- !u!4 &4211495 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc,
@@ -250,6 +250,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 37c90685ae5b6854c86912be70f65bff,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
 --- !u!4 &65732001 stripped
@@ -279,7 +284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4620f3c93dca8c94c9124d8ba443f43e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9707898
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4620f3c93dca8c94c9124d8ba443f43e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1537,6 +1542,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1152816337}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1032453984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 64683764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1076575872 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5,
@@ -2421,9 +2432,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995276494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c7dc819daa7a254985d7e36f416034f, type: 3}
+  m_Script: {fileID: 11500000, guid: f4b318578febed543935f538f24a7803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 1032453984}
 --- !u!195 &1995276496
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2513,7 +2525,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995276494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.7065964, y: 4.7155304, z: 11.645348}
+  m_LocalPosition: {x: 4.7065964, y: 2.618, z: 11.645348}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
