@@ -34,13 +34,31 @@ public class EnemyAI : MonoBehaviour
         else if (distanceToTarget <= chaserange)
         {
             isProvoked = true;
-            navMeshAgent.SetDestination(target.position);
         }
     }
 
     private void EngageTarget()
     {
+        if(distanceToTarget >= navMeshAgent.stoppingDistance)
+        {
+            ChaseTarget();
+        }
+
+        if (distanceToTarget<= navMeshAgent.stoppingDistance)
+        {
+            AttackPLayers();
+        }
+    }
+
+    private void ChaseTarget()
+    {
+
         navMeshAgent.SetDestination(target.position);
+    }
+
+    private void AttackPLayers()
+    {
+        Debug.Log(name + " Has Seeked and is destroying " + target.name);
     }
 
     private void OnDrawGizmosSelected()
