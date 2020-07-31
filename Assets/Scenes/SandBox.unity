@@ -414,6 +414,28 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 82096aab38f01cb40a1cbf8629a810ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5862bbfe91a75054ca72c13b555b6ac5, type: 3}
+--- !u!1 &134664629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1614847152350415051, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 64683764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &134664631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134664629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b27c56bec830d48b26c46e7b77a392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 1205606540}
+  range: 100
+  damage: 30
+  muzleFlash: {fileID: 244550158}
 --- !u!4 &135241102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc,
@@ -651,6 +673,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc, type: 3}
+--- !u!198 &244550158 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8518879954408527541, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 64683764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &245021095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1793,6 +1821,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc,
     type: 3}
   m_PrefabInstance: {fileID: 779437723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1205606540 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 64683764}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1229846923 stripped
 Transform:
@@ -2958,20 +2992,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6759053287385790160, guid: 4d1e59662d4879a47a5b7cbd8e345556,
-        type: 3}
-      propertyPath: m_AutoBraking
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6759053287385790160, guid: 4d1e59662d4879a47a5b7cbd8e345556,
-        type: 3}
-      propertyPath: m_StoppingDistance
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6759053287385790159, guid: 4d1e59662d4879a47a5b7cbd8e345556,
         type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1032453984}
+    - target: {fileID: 6297965815722580873, guid: 4d1e59662d4879a47a5b7cbd8e345556,
+        type: 3}
+      propertyPath: hitPoints
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d1e59662d4879a47a5b7cbd8e345556, type: 3}
