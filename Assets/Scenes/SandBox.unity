@@ -436,6 +436,7 @@ MonoBehaviour:
   range: 100
   damage: 30
   muzleFlash: {fileID: 244550158}
+  hitFX: {fileID: 729567356991782467, guid: 7099f2eadc844a042939221a0688e6c5, type: 3}
 --- !u!4 &135241102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc,
@@ -2991,6 +2992,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759053287385790164, guid: 4d1e59662d4879a47a5b7cbd8e345556,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759053287385790164, guid: 4d1e59662d4879a47a5b7cbd8e345556,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6759053287385790164, guid: 4d1e59662d4879a47a5b7cbd8e345556,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6759053287385790159, guid: 4d1e59662d4879a47a5b7cbd8e345556,
         type: 3}
