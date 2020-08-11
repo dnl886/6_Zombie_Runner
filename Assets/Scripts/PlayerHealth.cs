@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float hitPoints = 100f;
+    
+    public void TakeDamge(float damage)
     {
-        
-    }
+        hitPoints -= damage;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (hitPoints <= 1)
+        {
+            Debug.Log("You dead, my glip glop");
+        }
     }
 }
