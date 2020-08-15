@@ -14,6 +14,7 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
 
     bool isProvoked;
+    private float turnSpeed;
 
 
     // Start is called before the first frame update
@@ -39,6 +40,7 @@ public class EnemyAI : MonoBehaviour
 
     private void EngageTarget()
     {
+        FaceTarget();
         if(distanceToTarget >= navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
@@ -61,6 +63,13 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("attack", true);
         Debug.Log(name + " Has Seeked and is destroying " + target.name);
+    }
+
+    private void FaceTarget()
+    {
+        Vector3 direction = (target.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.y));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
     }
 
     private void OnDrawGizmosSelected()
