@@ -199,7 +199,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7474346695d0e164aad4c0b5cceafc79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 5
 --- !u!95 &8280779227263104604
 Animator:
   serializedVersion: 3
@@ -269,5 +269,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff1c299e5dfbe54cab762e7b84a63b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   damge: 40

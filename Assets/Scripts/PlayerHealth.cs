@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
         if (hitPoints <= 1)
         {
             Debug.Log("You dead, my glip glop");
+            GetComponent<DeathHandler>().HandleDeath();
         }
     }
 }
